@@ -1,0 +1,41 @@
+[user]
+    name = Nathan Adams
+    email = adamsnd@gmail.com
+[user]
+    name = Your Name
+    email = your.email@example.com
+
+[core]
+    editor = vim                  # Use your preferred editor, e.g. code, nvim, emacs
+    autocrlf = input              # Normalize line endings (safe for macOS/Linux)
+    pager = delta                 # Beautiful diffs if you use `git-delta` (optional)
+
+[color]
+    ui = auto
+
+[alias]
+    s = status
+    co = checkout
+    br = branch
+    cm = commit
+    d = diff
+    dc = diff --cached
+    lg = log --oneline --graph --decorate --all
+    unstage = reset HEAD --
+    amend = commit --amend --no-edit
+    tip = log -1 HEAD
+
+[push]
+    default = simple              # Push only current branch by default
+
+[merge]
+    conflictstyle = diff3         # Shows base in conflicts
+
+[diff]
+    tool = vimdiff                # Or meld, code, etc.
+
+[pull]
+    rebase = true                 # Avoid unnecessary merge commits
+
+[init]
+    defaultBranch = main          # Use 'main' as the default branch name
