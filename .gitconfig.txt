@@ -15,15 +15,18 @@
 
 [alias]
     s = status
+    st = status
     co = checkout
     br = branch
-    cm = commit
+    #cm = commit #Don't like it
     d = diff
     dc = diff --cached
     lg = log --oneline --graph --decorate --all
     unstage = reset HEAD --
     amend = commit --amend --no-edit
+    # got these from hg
     tip = log -1 HEAD
+    forget = rm --cached
 
 [push]
     default = simple              # Push only current branch by default
@@ -35,7 +38,7 @@
     tool = vimdiff                # Or meld, code, etc.
 
 [pull]
-    rebase = true                 # Avoid unnecessary merge commits
+    rebase = false                # Avoid unnecessary merge commits
 
 [init]
     defaultBranch = main          # Use 'main' as the default branch name

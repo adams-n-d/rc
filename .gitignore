@@ -1,0 +1,71 @@
+# ─────────────────────────────────────────────────────────
+# Nix
+result/
+.result/
+.result-tmp/
+.nix-gc-lock
+.nix-channels/
+.nix-defexpr/
+flake.lock
+
+# Direnv
+.envrc
+.direnv/
+
+# Editor junk
+*.swp
+*.swo
+*.swn
+*.bak
+*~
+
+# ─────────────────────────────────────────────────────────
+# Elixir / Mix / Erlang VM
+/_build/               # compiled builds
+/deps/                 # dependencies
+/.elixir_ls/           # language server cache
+erl_crash.dump         # crash logs
+*.beam                 # compiled BEAM bytecode
+*.ez                   # Erlang archive packages
+*.boot
+*.rel
+*.script
+*.config
+/consolidated/         # protocol consolidation
+*.app
+*.appup
+*.relup
+*.trace
+
+# Test & coverage
+cover/
+test/tmp/
+test/fixtures/tmp/
+test/fixtures/uploads/
+.excoveralls/          # test coverage
+
+# ─────────────────────────────────────────────────────────
+# Node/Frontend (Phoenix or asset pipeline)
+/assets/node_modules/
+/assets/.next/         # if using Next.js frontend
+assets/build/
+
+# ─────────────────────────────────────────────────────────
+# Docker
+*.tar
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# VSCode
+.vscode/
+.history/
+
+# JetBrains (IntelliJ, etc.)
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
